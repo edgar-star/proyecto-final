@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="header fade-in">
+            <a class="header__link" href="../index.html">Ir al Home</a>
+        </header>
+    
+        <section class="location slide-in">
+            <h2 class="location__title">Ubicación de la Tienda</h2>
+            <p class="location__address">Dirección de la tienda: Mercedes 1734, Montevideo, Uruguay</p>
+            <p class="location__hours">Horarios de atención: Lunes a Viernes, 10:00 AM - 19:00 PM</p>
+            <p class="location__phone">Teléfono: (598) 098-796-491</p>
+        </section>
+        
+        <form class="contact-form slide-in" action="submit_form.php" method="post">
+            <fieldset class="contact-form__fieldset">
+                <legend class="contact-form__legend">Contacto</legend>
+        
+                <label class="contact-form__label" for="nombre">Nombre:</label>
+                <input class="contact-form__input" type="text" name="nombre" required>
+        
+                <label class="contact-form__label" for="email">Email:</label>
+                <input class="contact-form__input" type="email" name="email" required>
+        
+                <label class="contact-form__label" for="mensaje">Mensaje:</label>
+                <textarea class="contact-form__textarea" name="mensaje" rows="4" required></textarea>
+        
+                <button class="contact-form__button" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    
+        <section class="social-media fade-in">
+            <h2 class="social-media__title">Redes sociales</h2>
+            <ul class="social-media__list">
+                <li class="social-media__item"><a class="social-media__link" href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li class="social-media__item"><a class="social-media__link" href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li class="social-media__item"><a class="social-media__link" href="https://wa.me/tunumerodetelefono"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
+            </ul>
+        </section>
+    </body>
+    </html>

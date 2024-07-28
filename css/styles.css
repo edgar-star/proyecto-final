@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Variables */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Header Styles */
+.header {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 1rem;
+  border-radius: 15px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.nav button {
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.nav button:hover {
+  background-color: #0056b3;
+}
+
+/* Main Styles */
+.main {
+  padding: 1rem;
+}
+
+.motos {
+  text-align: center;
+}
+
+.image-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.image-text-container img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.image-text-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-text-container {
+    grid-template-columns: 1fr;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.logo img {
+  animation: fadeIn 2s ease-in-out;
+  /* Animación de deslizamiento */ 
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.image-text-container {
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+img, div {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */
