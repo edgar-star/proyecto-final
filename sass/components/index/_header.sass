@@ -1,62 +1,67 @@
-/* Header Styles */
+/* Estilos del encabezado */
 .header
-    grid-template-columns: 1fr auto
-    align-items: center
-    padding: 1rem
-    background-color: #333
-    color: #fff
-
-.logo img
-    height: 50px
-    margin-right: 1rem
-    border-radius: 15px
-
-.nav ul
-    list-style: none
+    background-color: $color-primary
+    color: $color-secondary
     display: flex
-    gap: 1rem
-    padding: 0
+    justify-content: space-between
+    align-items: center
+    padding: 10px 20px
+    position: relative
+    height: $header-height
 
-.nav button
-    padding: 0.5rem 1rem
-    background-color: #007BFF
-    color: #fff
-    border: none
-    cursor: pointer
+.logo
+    display: flex
+    align-items: center
 
-    &:hover
-        background-color: #0056b3
+    img
+        height: 50px
+        margin-right: 10px
 
-/* Main Styles */
-.main
-    padding: 1rem
-
-.motos
-    text-align: center
-
-.image-text-container
-    display: grid
-    grid-template-columns: 1fr 1fr
-    gap: 1rem
-
-    & img
-        width: 100%
-        height: auto
-        aspect-ratio: 4 / 3
-        object-fit: cover
-
-    & div
+.nav
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
         display: flex
+
+    li
+        margin-left: $nav-link-margin
+
+        a
+            color: $nav-link-color
+            text-decoration: none
+            font-weight: $font-weight-bold
+
+        &:hover
+            text-decoration: $nav-link-hover-color
+
+    &-toggle
+        display: none
         flex-direction: column
-        justify-content: center
+        justify-content: space-around
+        width: $nav-toggle-size
+        height: $nav-toggle-size
+        background: none
+        border: none
+        cursor: pointer
 
-button
-    padding: 0.5rem 1rem
-    background-color: #007BFF
-    color: #fff
-    border: none
-    cursor: pointer
-    margin-top: 1rem
+@media (max-width: 768px)
+.nav
+    ul
+        flex-direction: column
+        position: absolute
+        top: $header-height
+        left: 0
+        width: 100%
+        background-color: $color-primary
+        display: none
 
-button:hover
-    background-color: #0056b3
+    li
+        text-align: center
+        margin: 10px 0
+
+    &.nav--visible ul
+        display: flex
+
+    &-toggle
+        display: flex
