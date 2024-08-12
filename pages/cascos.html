@@ -4,34 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cascos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./cascos.html">Cascos</a></li>
-                <li><a href="./aceites.html">Aceites</a></li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-                <li><a href="./contacts.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Motopremier shop logo" width="30" height="30" class="d-inline-block align-top">
+                MotoPremier Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cascos.html">Cascos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aceites.html">Aceites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacts.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <section id="seccion-cascos">
-        <h2>Nuestros cascos</h2>
-        <div class="cascos">
-            <img src="casco1.jpg" alt="Casco 1">
-            <p>Descripción del casco 1</p>
-        </div>
-        <div class="casco">
-            <img src="casco2.jpg" alt="Casco 2">
-            <p>Descripción del casco 2</p>
-        </div>
-        <div class="moto">
-            <img src="casco3.jpg" alt="Casco 3">
-            <p>Descripción del casco 3</p>
+    <section id="seccion-cascos" class="container mt-5">
+        <h2 class="text-center mb-5">Nuestros cascos</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="casco1.jpg" class="card-img-top" alt="Casco 1">
+                    <div class="card-body">
+                        <p class="card-text">Descripción del casco 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="casco2.jpg" class="card-img-top" alt="Casco 2">
+                    <div class="card-body">
+                        <p class="card-text">Descripción del casco 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="casco3.jpg" class="card-img-top" alt="Casco 3">
+                    <div class="card-body">
+                        <p class="card-text">Descripción del casco 3</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

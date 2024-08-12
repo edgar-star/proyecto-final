@@ -9,28 +9,41 @@
     Comprometidos con la calidad y el servicio al cliente, te invitamos a explorar nuestra tienda en línea y encontrar todo lo que necesitas para tu pasión por las motos.">
     <title>MotoPremier Shop</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/icon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./assets/images/logo.png" alt="Motopremier shop logo">
-            <h1>MotoPremier Shop</h1>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/cascos.html">Cascos</a></li>
-                <li><a href="./pages/aceites.html">Aceites</a></li>
-                <li><a href="./pages/indumentaria.html">Indumentaria</a></li>
-                <li><a href="./pages/contacts.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./">
+                <img src="./assets/images/logo.png" alt="Motopremier shop logo" width="30" height="30" class="d-inline-block align-top">
+                MotoPremier Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/cascos.html">Cascos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/aceites.html">Aceites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacts.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <button class="nav-toggle" aria-label="open navigation">
-            <span class="hamburger"></span>
-        </button>
     </header>
 
     <main class="main">
@@ -41,33 +54,32 @@
         <article>
             <h3>KTM 390 ADVENTURE</h3>
             <section id="seccion-imagen-texto" class="section">
-                <div class="image-text-container">
-                    <img src="./assets/images/ktmadv390(1).jpg" alt="ktm adv">
-                    <img src="./assets/images/ktmadv390(tft).jpg" alt="tablero ktm">
-                    <div>
-                        <p>La KTM 390 ADVENTURE 2023 reescribe el libro de reglas sobre cómo debe ser el viaje diario al
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/images/ktmadv390(1).jpg" alt="ktm adv" class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/images/ktmadv390(tft).jpg" alt="tablero ktm" class="img-fluid mb-3">
+                    </div>
+                    <div class="col-12">
+                        <p class="text-justify">La KTM 390 ADVENTURE 2023 reescribe el libro de reglas sobre cómo debe ser el viaje diario al
                             trabajo. Al fusionar la versatilidad todoterreno y la confiabilidad comprobada con el
                             rendimiento del mundo real, sin mencionar las ruedas con radios listas para la aventura, un
                             motor probado de 373 cc y un chasis líder en su clase, la KTM 390 ADVENTURE no solo busca
-                            nuevas aventuras: no deja nada. camino inexplorado.</p>
+                            nuevas aventuras: no deja ningún camino inexplorado.</p>
                     </div>
                 </div>
             </section>
         </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer text-center mt-4">
         <p>&copy; 2024 MotoPremier Shop - Todos los derechos reservados</p>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('.nav');
-
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('nav--visible');
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

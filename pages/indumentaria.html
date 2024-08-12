@@ -4,47 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indumentaria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./cascos.html">Cascos</a></li>
-                <li><a href="./aceites.html">Aceites</a></li>
-                <li><a href="./indumentaria.html">Indumentaria</a></li>
-                <li><a href="./contacts.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Motopremier shop logo" width="30" height="30" class="d-inline-block align-top">
+                MotoPremier Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cascos.html">Cascos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aceites.html">Aceites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacts.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section id="seccion-indumentaria">
-        <h2>Indumentaria</h2>
-        <article class="product">
-            <img src="indumentaria1.jpg" alt="Artículo 1">
-            <div class="product-description">
-                <h3>Artículo de Indumentaria 1</h3>
-                <p>Descripción del artículo de indumentaria 1. Este producto es ideal para motociclistas que buscan comodidad y estilo.</p>
+    <section id="seccion-indumentaria" class="container mt-5">
+        <h2 class="text-center mb-5">Indumentaria</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <article class="card">
+                    <img src="indumentaria1.jpg" class="card-img-top" alt="Artículo 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Artículo de Indumentaria 1</h3>
+                        <p class="card-text">Descripción del artículo de indumentaria 1. Este producto es ideal para motociclistas que buscan comodidad y estilo.</p>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article class="product">
-            <img src="indumentaria2.jpg" alt="Artículo 2">
-            <div class="product-description">
-                <h3>Artículo de Indumentaria 2</h3>
-                <p>Descripción del artículo de indumentaria 2. Este producto ofrece gran protección y es de alta durabilidad.</p>
+            <div class="col-md-4 mb-4">
+                <article class="card">
+                    <img src="indumentaria2.jpg" class="card-img-top" alt="Artículo 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Artículo de Indumentaria 2</h3>
+                        <p class="card-text">Descripción del artículo de indumentaria 2. Este producto ofrece gran protección y es de alta durabilidad.</p>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article class="product">
-            <img src="indumentaria3.jpg" alt="Artículo 3">
-            <div class="product-description">
-                <h3>Artículo de Indumentaria 3</h3>
-                <p>Descripción del artículo de indumentaria 3. Diseñado para condiciones extremas, proporciona gran resistencia y confort.</p>
+            <div class="col-md-4 mb-4">
+                <article class="card">
+                    <img src="indumentaria3.jpg" class="card-img-top" alt="Artículo 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Artículo de Indumentaria 3</h3>
+                        <p class="card-text">Descripción del artículo de indumentaria 3. Diseñado para condiciones extremas, proporciona gran resistencia y confort.</p>
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </section>
 
-    
-
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

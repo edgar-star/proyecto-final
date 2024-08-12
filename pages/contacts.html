@@ -4,53 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="/css/contacts/contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <header class="header fade-in">
-            <nav class="nav">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./cascos.html">Cascos</a></li>
-                    <li><a href="./aceites.html">Aceites</a></li>
-                    <li><a href="./indumentaria.html">Indumentaria</a></li>
-                    <li><a href="./contacts.html">Contacto</a></li>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Motopremier shop logo" width="30" height="30" class="d-inline-block align-top">
+                MotoPremier Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/cascos.html">Cascos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/aceites.html">Aceites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/indumentaria.html">Indumentaria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacts.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    
-        <section class="location slide-in">
-            <h2 class="location__title">Ubicación de la Tienda</h2>
-            <p class="location__address">Dirección de la tienda: Mercedes 1734, Montevideo, Uruguay</p>
-            <p class="location__hours">Horarios de atención: Lunes a Viernes, 10:00 AM - 19:00 PM</p>
-            <p class="location__phone">Teléfono: (598) 098-796-491</p>
-        </section>
-        
-        <form class="contact-form slide-in" action="submit_form.php" method="post">
-            <fieldset class="contact-form__fieldset">
-                <legend class="contact-form__legend">Contacto</legend>
-        
-                <label class="contact-form__label" for="nombre">Nombre:</label>
-                <input class="contact-form__input" type="text" name="nombre" required>
-        
-                <label class="contact-form__label" for="email">Email:</label>
-                <input class="contact-form__input" type="email" name="email" required>
-        
-                <label class="contact-form__label" for="mensaje">Mensaje:</label>
-                <textarea class="contact-form__textarea" name="mensaje" rows="4" required></textarea>
-        
-                <button class="contact-form__button" type="submit">Enviar</button>
-            </fieldset>
-        </form>
-    
-        <section class="social-media fade-in">
-            <h2 class="social-media__title">Redes sociales</h2>
-            <ul class="social-media__list">
-                <li class="social-media__item"><a class="social-media__link" href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
-                <li class="social-media__item"><a class="social-media__link" href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                <li class="social-media__item"><a class="social-media__link" href="https://wa.me/tunumerodetelefono"><i class="fab fa-whatsapp"></i>WhatsApp</a></li>
-            </ul>
-        </section>
-    </body>
-    </html>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4 slide-in">
+                <h2 class="location__title">Ubicación de la Tienda</h2>
+                <p class="location__address">Dirección de la tienda: Mercedes 1734, Montevideo, Uruguay</p>
+                <p class="location__hours">Horarios de atención: Lunes a Viernes, 10:00 AM - 19:00 PM</p>
+                <p class="location__phone">Teléfono: (598) 098-796-491</p>
+            </div>
+            <div class="col-md-6 mb-4 slide-in">
+                <form class="contact-form" action="submit_form.php" method="post">
+                    <fieldset class="border p-4">
+                        <legend class="contact-form__legend">Contacto</legend>
+            
+                        <div class="form-group">
+                            <label class="contact-form__label" for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" name="nombre" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label class="contact-form__label" for="email">Email:</label>
+                            <input class="form-control" type="email" name="email" required>
+                        </div>
+            
+                        <div class="form-group">
+                            <label class="contact-form__label" for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" name="mensaje" rows="4" required></textarea>
+                        </div>
+            
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 fade-in">
+        <h2 class="text-center">Redes sociales</h2>
+        <ul class="list-unstyled d-flex justify-content-center mt-4">
+            <li class="mx-3">
+                <a class="text-decoration-none" href="https://www.facebook.com/tupagina" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i> Facebook
+                </a>
+            </li>
+            <li class="mx-3">
+                <a class="text-decoration-none" href="https://www.instagram.com/tupagina" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i> Instagram
+                </a>
+            </li>
+            <li class="mx-3">
+                <a class="text-decoration-none" href="https://wa.me/tunumerodetelefono">
+                    <i class="fab fa-whatsapp fa-2x"></i> WhatsApp
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
